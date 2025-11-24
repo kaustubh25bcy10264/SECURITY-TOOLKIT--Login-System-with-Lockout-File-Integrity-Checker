@@ -1,79 +1,72 @@
-# 🔐 Security Toolkit – Login System with Lockout & File Integrity Checker
+# 🔐 Security Toolkit – Login system with lockout & File integrity checker
 
-> **⭐ Ideal for academic submissions, security demonstrations, and practical cybersecurity training.**
+>**⭐ Very ideal for academic submissions, security demonstrations, and practical cybersecurity training.**
 
 ---
 
 ## 📖 Overview
 
-The **Security Toolkit** is a cybersecurity-focused project showcasing secure login handling, account lockout protection, file integrity verification, and audit logging.
+The *Security toolkit: Login system with lockout and file integrity checker** is a cyber-security related project demonstrating secure handling of login, account lockout protection, verification and checking of file integrity, and, audit logging.
 
-This toolkit emphasizes secure programming principles such as **hashing**, **modularization**, **error handling**, and **logging**—all essential in modern security engineering.
+This toolkit stresses on secure programming principles such as **hashing**,**modularization**,**error handling**, and **logging** –all essential in perspective of modern security engineering.
 
 ---
 
-## ✨ Core Features
+## ✨Project's core features
 
 | Feature | Description | Security Focus |
 | :--- | :--- | :--- |
-| **Secure File Hashing** | Implements **SHA-256 hashing** using chunked reading for safe processing of large (multi-GB) files. | Integrity Verification |
+| **Secure File Hashing** | Implements **SHA-256 hashing** using chunked reading for safe processing of very large files(files even in Gigabytes). | Verification of Integrity |
 | **Login Lockout System** | Automatically locks accounts after repeated failed login attempts (configurable) to counter **brute-force attacks**. | Authentication Security |
 | **User-Friendly Error Messages** | Provides descriptive feedback for missing files, invalid credentials, or permission issues. | Usability & Security |
-| **Audit Logging** | Logs all login attempts, lockouts, hashing operations, and errors for **forensic analysis**. | Accountability & Monitoring |
+| **Audit Logging** | Logs all login attempts, lockouts, hashing operations, and errors, for? **Forensic analysis**. | Accountability & Monitoring |
 | **Modular Code Architecture** | Separate modules for hashing, logging, and authentication ensures clean separation of concerns. | Maintainability & Scalability |
 | **Efficient & Memory-Safe** | Uses **chunk-based hashing** to avoid memory overload when handling large files. | Performance |
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ technilogies used in this project
 
-* **Python 3.x** (Recommended: 3.11 or 3.12)
-* `hashlib` — Secure hashing library
+* **Python 3.x** (Recommendation: 3.11 or 3.12)
+* `hashlib` — A Secure hashing library
 * `logging` — Audit & event tracking
-* `random`  — Password generation logic
+* `random`  — Logics for Password generation
 * **Visual Studio Code / Visual Studio 2022**
 * **Git & GitHub** — Version control
 
 ---
 
-## ⚙️ Installation & Setup
+## ⚙️ Installation & setup
 
- 1. **Clone the Repository**
-
+1. **Clone Repository**
+	
 ```bash
-git clone [https://github.com/your-username/security-toolkit.git](https://github.com/your-username/security-toolkit.git)
+git clone https://github.com/kaustubh25bcy10264/SECURITY-TOOLKIT--Login-System-with-Lockout-File-Integrity-Checker.git
 cd security-toolkit
 ```
 
-2. **Set Up Python Environment**
-   
-Ensure Python 3.11+ is installed. It is highly recommended to create and activate a virtual environment.
-
-
+2. **Setting up python environment**
+	
+Please Ensure python 3.11 or higher is installed. It is highly recommended to create and activate a virtual environment and work inside it.
+	
 Linux / macOS
 ```Bash
 python -m venv venv
 source venv/bin/activate
 ```
-
+	
 Windows
 ```Bash
 python -m venv venv
 venv\Scripts\activate
 ```
 
-3. **Install Dependencies**
+3. **Installing dependencies**
+
 * If requirements.txt exists:
 
 ```Bash
 pip install -r requirements.txt
-```
-
-4. **Run the Project**
-
-* Start normally:
-```Bash
-python main.py
 ```
 
 * Run file hashing (provide a path to a file):
@@ -82,18 +75,18 @@ python main.py path/to/your/file.ext
 ```
 
 ## 🧪 Testing Guide
-Use the following scenarios to validate the toolkit's security features:
+Use the following given scenarios to check & validate the toolkit's security features:
 
-### ✔️ Successful Login
+### ✔️ Successful login
 1.  Enter valid username and password.
-2.  Confirm successful login message and log entry.
+2.  Confirm successful login message and log entry inside log file.
 
 ### ❌ Lockout After Failed Attempts
 1.  Enter wrong credentials 3 or more times.
-2.  Verify:
-- Account is locked.
+2.  Verify following:
+- Account is locked that is you can't relogin for predefined time, here it is 30 seconds.
 - Lockout event is properly logged.
-- A clear countdown message is shown.
+- Program should display a clear countdown message.
 
 ### 📄 File Hashing Test
 1.  Place a test file (e.g., sample.txt) in the project directory.
@@ -109,12 +102,13 @@ Use the following scenarios to validate the toolkit's security features:
 
 ### 📝 Audit Trail Validation
 1.  Inspect the log file: logs/project.log
-2.  You should see entries for: Login attempts, Lockouts, File hashes, and Exceptions/errors.
+2.  You should see proper  entries for: Login attempts, Lockouts, File hashes, and Exceptions/errors.
 
 ### 🚀 Future Improvements
-These features are planned for future development to enhance security posture:
+These features are planned for future development of the project and to enhance its security posture, which are given below:
   * Salted password hashing (using bcrypt or argon2)
   * Multi-Factor Authentication (MFA)
   * Role-Based Access Control (RBAC)
-  * Encrypted user database
+  * properly Encrypted user databases
   * Log rotation & archival
+
